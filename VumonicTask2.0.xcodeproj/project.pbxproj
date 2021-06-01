@@ -13,6 +13,13 @@
 		F969D8E72665E634003639BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F969D8E52665E634003639BC /* Main.storyboard */; };
 		F969D8E92665E635003639BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F969D8E82665E635003639BC /* Assets.xcassets */; };
 		F969D8EC2665E635003639BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F969D8EA2665E635003639BC /* LaunchScreen.storyboard */; };
+		F969D8F62665E697003639BC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969D8F52665E697003639BC /* Post.swift */; };
+		F969D8FA2665E6A7003639BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969D8F92665E6A7003639BC /* User.swift */; };
+		F969D8FD2665E6EE003639BC /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969D8FC2665E6EE003639BC /* HomePostCell.swift */; };
+		F969D9002665E725003639BC /* HomePostCellHearder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969D8FF2665E725003639BC /* HomePostCellHearder.swift */; };
+		F969D9032665E73B003639BC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969D9022665E73B003639BC /* HomeController.swift */; };
+		F969D9062665E766003639BC /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969D9052665E766003639BC /* StoriesCollectionViewCell.swift */; };
+		F969D9092665E834003639BC /* UIView_+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F969D9082665E834003639BC /* UIView_+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		F969D8E82665E635003639BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F969D8EB2665E635003639BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F969D8ED2665E635003639BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F969D8F52665E697003639BC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F969D8F92665E6A7003639BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F969D8FC2665E6EE003639BC /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		F969D8FF2665E725003639BC /* HomePostCellHearder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCellHearder.swift; sourceTree = "<group>"; };
+		F969D9022665E73B003639BC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		F969D9052665E766003639BC /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		F969D9082665E834003639BC /* UIView_+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView_+Ext.swift"; path = "VumonicTask2.0/View/UIView_+Ext.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,62 @@
 		F969D8DE2665E634003639BC /* VumonicTask2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				F969D8DF2665E634003639BC /* AppDelegate.swift */,
-				F969D8E12665E634003639BC /* SceneDelegate.swift */,
-				F969D8E32665E634003639BC /* ViewController.swift */,
-				F969D8E52665E634003639BC /* Main.storyboard */,
-				F969D8E82665E635003639BC /* Assets.xcassets */,
-				F969D8EA2665E635003639BC /* LaunchScreen.storyboard */,
+				F969D9152666213E003639BC /* View */,
+				F969D91426662124003639BC /* Utilites */,
+				F969D912266620C3003639BC /* Controller */,
+				F969D913266620F7003639BC /* Cell */,
+				F969D8F42665E680003639BC /* Model */,
 				F969D8ED2665E635003639BC /* Info.plist */,
 			);
 			path = VumonicTask2.0;
+			sourceTree = "<group>";
+		};
+		F969D8F42665E680003639BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F969D8F52665E697003639BC /* Post.swift */,
+				F969D8F92665E6A7003639BC /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F969D912266620C3003639BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F969D9022665E73B003639BC /* HomeController.swift */,
+				F969D8E32665E634003639BC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F969D913266620F7003639BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F969D9052665E766003639BC /* StoriesCollectionViewCell.swift */,
+				F969D8FC2665E6EE003639BC /* HomePostCell.swift */,
+				F969D8FF2665E725003639BC /* HomePostCellHearder.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F969D91426662124003639BC /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				F969D8DF2665E634003639BC /* AppDelegate.swift */,
+				F969D8E12665E634003639BC /* SceneDelegate.swift */,
+				F969D8E82665E635003639BC /* Assets.xcassets */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		F969D9152666213E003639BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F969D9082665E834003639BC /* UIView_+Ext.swift */,
+				F969D8E52665E634003639BC /* Main.storyboard */,
+				F969D8EA2665E635003639BC /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +200,14 @@
 			files = (
 				F969D8E42665E634003639BC /* ViewController.swift in Sources */,
 				F969D8E02665E634003639BC /* AppDelegate.swift in Sources */,
+				F969D8FD2665E6EE003639BC /* HomePostCell.swift in Sources */,
+				F969D9062665E766003639BC /* StoriesCollectionViewCell.swift in Sources */,
 				F969D8E22665E634003639BC /* SceneDelegate.swift in Sources */,
+				F969D9032665E73B003639BC /* HomeController.swift in Sources */,
+				F969D8FA2665E6A7003639BC /* User.swift in Sources */,
+				F969D8F62665E697003639BC /* Post.swift in Sources */,
+				F969D9092665E834003639BC /* UIView_+Ext.swift in Sources */,
+				F969D9002665E725003639BC /* HomePostCellHearder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
